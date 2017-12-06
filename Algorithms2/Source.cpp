@@ -52,6 +52,21 @@ void coinSort()
 //Knapsack Algorithm------------------------------------------------------------------------------------------
 void knapsack()
 {
+	int value[10]{ 50, 110, 110, 120, 145, 185, 220, 250, 230, 300 },
+		weight[10]{ 5, 10, 10, 12, 15, 18, 20, 22, 24, 30 },
+		weightMax = 50, 
+		knapsackW =0,
+		knapsackV = 0,
+		knapsackTopV = 0,
+		i = 0;
+
+	while (knapsackW < weightMax)
+	{
+		knapsackW = weight[i];
+		knapsackV = value[i];
+		i++;
+	}
+	knapsackTopV = knapsackW;
 
 }
 
